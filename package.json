@@ -1,0 +1,24 @@
+{
+  "name": "hogwarts-wizarding-archives",
+  "version": "1.0.0",
+  "description": "## Задача:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nakatmig": "npx sequelize-cli db:migrate",
+    "otkatmig": "npx sequelize-cli db:migrate:undo:all",
+    "nakatseed": "npx sequelize db:seed:all",
+    "otkatseed": "npx sequelize db:seed:undo:all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
+  }
+}
