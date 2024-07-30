@@ -39,8 +39,15 @@ module.exports = {
         {
           name: "Винсент Крэбб",
           address: "Улица Одинокий пряник, 32",
-          yearOfStudy: 1992,
+          yearOfStudy: 1993,
           specialAchievements: "Магистр зеленого маркета",
+          // Ой, ты нашла мой код и исправленную циферку 2(исправил на 3)
+        },
+        {
+          name: "Валера",
+          address: "Коробка из под ТВ",
+          yearOfStudy: 2000,
+          specialAchievements: "Читает по половым губам",
         },
       ],
       {}

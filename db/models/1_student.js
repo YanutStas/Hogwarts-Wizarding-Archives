@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       address: DataTypes.STRING,
       yearOfStudy: DataTypes.INTEGER,
       specialAchievements: DataTypes.STRING,
+      // Секретный код
     },
     {
       sequelize,
