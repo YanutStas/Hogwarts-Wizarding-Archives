@@ -13,7 +13,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       history: {
-        type: Sequelize.STRING,
+        type: Sequelize.DataTypes.STRING(1000),
       },
       location: {
         type: Sequelize.STRING,
