@@ -8,7 +8,9 @@
     "nakatmig": "npx sequelize-cli db:migrate",
     "otkatmig": "npx sequelize-cli db:migrate:undo:all",
     "nakatseed": "npx sequelize db:seed:all",
-    "otkatseed": "npx sequelize db:seed:undo:all"
+    "otkatseed": "npx sequelize db:seed:undo:all",
+    "onmig": "npx sequelize-cli db:migrate:undo:all && npx sequelize-cli db:migrate",
+    "onseed": "npx sequelize db:seed:undo:all && npx sequelize db:seed:all"
   },
   "keywords": [],
   "author": "",
