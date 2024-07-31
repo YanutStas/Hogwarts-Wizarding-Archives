@@ -5,9 +5,10 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class course extends Model {
     static associate(models) {
-      this.belongsTo(models.student, { foreignKey: 'student_id' });
-      this.belongsTo(models.professor, { foreignKey: "professor_id" });
+      //this.belongsTo(models.student, { foreignKey: 'student_id' });
+      this.hasMany(models.professor, { foreignKey: "id" });
       this.hasMany(models.spell, { foreignKey: "id" });
+      this.hasMany(models.student, { foreignKey: "id" });
     }
   }
   course.init({

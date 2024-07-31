@@ -15,26 +15,6 @@ module.exports = {
       educationalMaterial: {
         type: Sequelize.STRING,
       },
-      student_id: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        references: {
-          model: {
-            tableName: "students",
-          },
-          key: "id",
-        },
-      },
-      professor_id: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        references: {
-          model: {
-            tableName: "professors",
-          },
-          key: "id",
-        },
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
